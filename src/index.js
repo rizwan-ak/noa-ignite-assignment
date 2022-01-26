@@ -1,11 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { ThemeProvider } from "react-jss";
+import MainPage from "./common/pages/MainPage";
+import theme from "./common/utils/theme";
 import "./index.css";
-import App from "./App";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider theme={theme}>
+      <MainPage />
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );
