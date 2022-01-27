@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import { createUseStyles, useTheme } from "react-jss";
-import RepoDetails from "../components/RepoDetails";
-import NOAButton from "../elements/NOAButton";
-import NOATypography, { variants } from "../elements/NOATypography";
-import data from "../utils/data.json";
-import { handleDecrement, handleIncrement } from "../utils/helperFunctions";
+import RepoDetails from "../common/components/RepoDetails";
+import NOAButton from "../common/elements/NOAButton";
+import NOATypography, { variants } from "../common/elements/NOATypography";
+import data from "../common/utils/data.json";
+import {
+  handleDecrement,
+  handleIncrement,
+} from "../common/utils/helperFunctions";
 
 const useStyles = createUseStyles({
   counterContainer: {
@@ -12,6 +15,9 @@ const useStyles = createUseStyles({
     justifyContent: "space-between",
     alignItems: "center",
     padding: 20,
+    "@media screen and (max-width: 600px)": {
+      flexDirection: "column",
+    },
   },
 });
 
