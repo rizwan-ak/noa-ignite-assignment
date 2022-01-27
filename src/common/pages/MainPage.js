@@ -39,7 +39,7 @@ export default function MainPage() {
           onClick={() => handleIncrement(counter, setCounter)}
         />
       </div>
-      <RepoDetails />
+      <RepoDetails counter={counter} />
     </div>
   );
 }
