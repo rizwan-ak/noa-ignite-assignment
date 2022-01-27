@@ -29,7 +29,10 @@ export default function RepoDetails({ counter }) {
   return (
     <div className={classes.repoDetailsContainer}>
       {caughtError ? (
-        <NOATypography value={`${data.errorText}`} variant={variants.error} />
+        <>
+          <NOATypography value={`${caughtError}`} variant={variants.error} />
+          <NOATypography value={`${data.errorText}`} variant={variants.error} />
+        </>
       ) : (
         <>
           {isLoading ? (

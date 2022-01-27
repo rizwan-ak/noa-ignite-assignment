@@ -13,8 +13,8 @@ export const fetchRepo = async (
     setIsLoading(false);
     callBack(response?.data);
   } catch (err) {
-    setCaughtError(true);
+    setCaughtError(err);
     setIsLoading(false);
-    console.error(err);
+    // console.error(err);
   }
 };

@@ -2,7 +2,7 @@
   "DECButtonText": "DECREMENT",
   "INCButtonText": "INCREMENT",
   "counterText": "Counter:",
-  "errorText": "Something went wrong while fetching the repository. please try another repository.",
+  "errorText": "Something went wrong, please try another repository.",
   "repoDetails": {
     "name": "Name:",
     "stars": "Total Stars:",
